@@ -1,0 +1,7 @@
+{
+	"email": "myname@myserver.com",
+	"company": "My Company",
+	"repo_name": "testproject",
+	"project_name": "Test project",
+	"project_short_description": "This is a test project for Beamer and cookiecutter."
+}

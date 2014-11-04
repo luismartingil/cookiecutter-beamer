@@ -1,0 +1,163 @@
+{% raw %}
+
+\documentclass[compress]{beamer}
+
+\setbeamersize{text margin left = 2.5em}
+
+\usepackage{tipa}
+\usepackage{tikz}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage{epstopdf}
+\usepackage{parcolumns}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{url}
+\usepackage{caption}
+\usepackage[abs]{overpic}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{minted}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{my_color}{RGB}{114, 129, 210}
+\definecolor{mycompany_red}{RGB}{217,31,20}
+\definecolor{mycompany_blue}{RGB}{4,118,176}
+
+\newenvironment{changemargin}[2]{% 
+  \begin{list}{}{% 
+      \setlength{\topsep}{0pt}% 
+      \setlength{\leftmargin}{#1}% 
+      \setlength{\rightmargin}{#2}% 
+      \setlength{\listparindent}{\parindent}% 
+      \setlength{\itemindent}{\parindent}% 
+      \setlength{\parsep}{\parskip}% 
+    }% 
+  \item[]}
+{\end{list}} 
+ 
+\lstset{ %
+  basicstyle=\tiny,
+  framexleftmargin=3mm,
+  xleftmargin=3mm,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=2pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  frame=single,
+  rulecolor=\color{gray},
+  tabsize=1,
+  breaklines=true,
+  breakatwhitespace=true,
+  escapeinside={\%*}{*)},
+  morekeywords={*,...}
+}
+
+\lstdefinelanguage{XML}
+{
+basicstyle=\ttfamily\color{darkblue}\bfseries,
+morestring=[b]'',
+morestring=[s]{>}{<},
+morecomment=[s]{<?}{?>},
+stringstyle=\color{black},
+identifierstyle=\color{darkblue},
+keywordstyle=\color{cyan},
+morekeywords={xmlns,version,type}
+}
+
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows,decorations.pathmorphing,through,backgrounds,positioning,fit,petri}
+\usetikzlibrary{shapes,shadows}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+\usepackage{animate}
+
+\setbeamertemplate{navigation symbols}{}
+\pgfdeclareimage[height=0.45cm]{logos/mycompany-logo.png}{logos/mycompany-logo.png}
+\logo{\pgfuseimage{logos/mycompany-logo.png}}
+\setbeamertemplate{items}[ball] 
+\setbeamertemplate{blocks}[rounded][shadow=true] 
+\usetheme{Warsaw} 
+
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{structure}{fg=my_color}
+\setbeamercolor*{palette quaternary}{fg=white,bg=UniBlue!30!black}
+
+%\useoutertheme{infolines}
+%\useoutertheme[subsection=true]{tree}
+%\useoutertheme[subsection=true]{smoothtree}
+%\useoutertheme[subsection=true]{tree}
+\useoutertheme{miniframes}
+\useinnertheme{rectangles}
+
+% fix clipped headline (bug with Warsaw/infolines)
+%\addtobeamertemplate{headline}{}{\vskip2pt}
+
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+\begin{document}
+
+{% endraw %}
+
+\title{ {{cookiecutter.project_name}} }
+\author{ {{cookiecutter.email}} }
+\institute{ {{cookiecutter.company}} \textsuperscript{\textregistered}}
+{% raw %}
+\date{\today}
+\defbeamertemplate*{footline}{shadow theme}
+{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertframenumber\,/\,\inserttotalframenumber\hfill\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\usebackgroundtemplate{\centering\includegraphics[width=\paperwidth]{logos/mycompany-logo-watermark.png}} 
+
+\begin{frame}
+  \titlepage 
+\end{frame}
+
+\begin{frame}{\contentsname}
+\begin{multicols}{2}
+\scriptsize\tableofcontents
+\end{multicols}
+\end{frame}
+
+\begin{frame}
+\frametitle{Table of contents}
+\scriptsize\tableofcontents
+\end{frame}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Contents}
+    \scriptsize\tableofcontents[currentsection,hideothersubsection]
+  \end{frame}
+}
+
+% sections
+\input{section1.tex}
+\input{section2.tex}
+
+\end{document}
+
+{% endraw %}
