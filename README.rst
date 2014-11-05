@@ -6,6 +6,8 @@ Cookiecutter template for a LaTeX Beamer presentation.
 Installation
 ------------
 
+Install latex dependencies and Pygments for source code highlight.
+
 - Debian:
 
     # Installing some dependencies
