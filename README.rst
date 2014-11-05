@@ -26,3 +26,19 @@ Installation
     # Run the pdflatex command
 
     make
+
+
+Output
+------
+
+File like
+
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main000.png
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main001.png
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main002.png
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main003.png
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main004.png
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main005.png
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main006.png
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main007.png
+.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main008.png
