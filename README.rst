@@ -30,12 +30,14 @@ Output
 
 [a relative link](https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main000.pdf)
 
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main000.png
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main001.png
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main002.png
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main003.png
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main004.png
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main005.png
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main006.png
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main007.png
-.. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main008.png
+[Read more words!](docs/more_words.md)
+
+.. image:: bin/main000.png
+.. image:: bin/main001.png
+.. image:: bin/main002.png
+.. image:: bin/main003.png
+.. image:: bin/main004.png
+.. image:: bin/main005.png
+.. image:: bin/main006.png
+.. image:: bin/main007.png
+.. image:: bin/main008.png
