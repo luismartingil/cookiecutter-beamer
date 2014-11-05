@@ -28,7 +28,7 @@ Installation
 Output
 ------
 
-[a relative link](bin/main000.pdf)
+[a relative link](https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main000.pdf)
 
 .. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main000.png
 .. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main001.png
