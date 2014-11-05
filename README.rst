@@ -28,7 +28,7 @@ Installation
 Output
 ------
 
-.. file:: bin/main000.pdf
+[file.pdf](bin/main.pdf)
 
 .. image:: bin/main000.png
 .. image:: bin/main001.png
