@@ -28,7 +28,10 @@ Installation
 Output
 ------
 
-[file.pdf](bin/main.pdf)
+Check this [pdf file](bin/main.pdf)
+
+
+- Some screenshots:
 
 .. image:: bin/main000.png
 .. image:: bin/main001.png
