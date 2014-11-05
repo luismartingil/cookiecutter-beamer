@@ -3,9 +3,6 @@ cookiecutter-beamer
 
 Cookiecutter template for a LaTeX Beamer presentation.
 
-.. image:: https://raw.github.com/audreyr/cookiecutter/aa309b73bdc974788ba265d843a65bb94c2e608e/cookiecutter_medium.png
-
-
 Installation
 ------------
 
@@ -31,7 +28,7 @@ Installation
 Output
 ------
 
-File like
+[a relative link](bin/main000.pdf)
 
 .. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main000.png
 .. image:: https://raw.githubusercontent.com/luismartingil/cookiecutter-beamer/master/bin/main001.png
