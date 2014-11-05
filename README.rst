@@ -28,8 +28,7 @@ Installation
 Output
 ------
 
-Check this [pdf file](bin/main.pdf)
-
+Check this `pdf file <bin/main.pdf>`_
 
 - Some screenshots:
 
