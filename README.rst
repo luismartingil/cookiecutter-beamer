@@ -3,6 +3,8 @@ cookiecutter-beamer
 
 Cookiecutter template for a LaTeX Beamer presentation.
 
+    `cookiecutter https://github.com/luismartingil/cookiecutter-beamer.git`
+
 Installation
 ------------
 
@@ -13,6 +15,8 @@ Install latex dependencies and Pygments for source code highlight.
     # Installing some dependencies
 
     sudo apt-get install texlive-base texlive-fonts-recommended texlive-latex-base texlive-latex-recommended texify multex-bin tetex-frogg  tex-gyre  texlive-xetex texlive-pictures texlive-luatex texlive-bibtex-extra  texlive-extra-utils  texlive-font-utils texlive-fonts-extra  texlive-formats-extra texlive-generic-extra texlive-games  texlive-plain-extra texlive-latex-extra texlive-science texlive-base texlive-fonts-recommended texlive-latex-base ttf-dejavu-core ttf-gfs-* ttf-dejavu ttf-liberation ttf-bitstream-vera
+
+    # `lstcustom.sty` and `minted.sty` are provided within this repo
 
     sudo cp *.sty /usr/share/texmf-texlive/tex/latex/
 
