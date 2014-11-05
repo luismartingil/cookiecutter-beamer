@@ -20,7 +20,9 @@ Installation
     sudo texhash
 
     # Install python Pygments for minted source code
+
     sudo pip install Pygments
 
     # Run the pdflatex command
+
     make
