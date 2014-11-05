@@ -1,0 +1,4 @@
+{
+	"repo_name": "^[a-z]*$",
+	"project_name": "^[A-Z]"
+}
